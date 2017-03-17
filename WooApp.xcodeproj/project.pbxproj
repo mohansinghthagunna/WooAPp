@@ -8,20 +8,62 @@
 
 /* Begin PBXBuildFile section */
 		017D10FB1E779A910057A230 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017D10FA1E779A910057A230 /* AppDelegate.swift */; };
-		017D10FD1E779A910057A230 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017D10FC1E779A910057A230 /* ViewController.swift */; };
 		017D11001E779A910057A230 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017D10FE1E779A910057A230 /* Main.storyboard */; };
 		017D11021E779A910057A230 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 017D11011E779A910057A230 /* Assets.xcassets */; };
 		017D11051E779A910057A230 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017D11031E779A910057A230 /* LaunchScreen.storyboard */; };
+		01C23D7A1E7A807100749C3D /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C23D781E7A807100749C3D /* CustomNavigationController.swift */; };
+		01C23D7B1E7A807100749C3D /* CustomNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01C23D791E7A807100749C3D /* CustomNavigationController.xib */; };
+		01C23D801E7A823300749C3D /* HomeParentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C23D7E1E7A823300749C3D /* HomeParentVC.swift */; };
+		01C23D811E7A823300749C3D /* HomeParentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01C23D7F1E7A823300749C3D /* HomeParentVC.xib */; };
+		01C23D861E7A83F100749C3D /* HomeNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C23D851E7A83F100749C3D /* HomeNavigationBar.swift */; };
+		01C23D881E7A83F900749C3D /* HomeNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01C23D871E7A83F900749C3D /* HomeNavigationBar.xib */; };
+		01FC42581E7B95CB00E028EA /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01FC42571E7B95CB00E028EA /* SWRevealViewController.m */; };
+		01FC425C1E7BA68D00E028EA /* CustomBurgerMenuAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FC425A1E7BA68D00E028EA /* CustomBurgerMenuAnimationView.swift */; };
+		01FC425D1E7BA68D00E028EA /* QCMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FC425B1E7BA68D00E028EA /* QCMethod.swift */; };
+		01FC42631E7BDE2D00E028EA /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FC42611E7BDE2D00E028EA /* SideMenuVC.swift */; };
+		01FC42641E7BDE2D00E028EA /* SideMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01FC42621E7BDE2D00E028EA /* SideMenuVC.xib */; };
+		01FC42671E7BE0C300E028EA /* SideMenuTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FC42651E7BE0C300E028EA /* SideMenuTableCell.swift */; };
+		01FC42681E7BE0C300E028EA /* SideMenuTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01FC42661E7BE0C300E028EA /* SideMenuTableCell.xib */; };
+		01FC426C1E7BE6A700E028EA /* StoreHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FC426A1E7BE6A700E028EA /* StoreHomeVC.swift */; };
+		01FC426D1E7BE6A700E028EA /* StoreHomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01FC426B1E7BE6A700E028EA /* StoreHomeVC.xib */; };
+		01FC42711E7BE6C500E028EA /* CategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FC426F1E7BE6C500E028EA /* CategoryVC.swift */; };
+		01FC42721E7BE6C500E028EA /* CategoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01FC42701E7BE6C500E028EA /* CategoryVC.xib */; };
+		01FC42761E7BF0A800E028EA /* CategoryTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FC42741E7BF0A800E028EA /* CategoryTableCell.swift */; };
+		01FC42771E7BF0A800E028EA /* CategoryTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01FC42751E7BF0A800E028EA /* CategoryTableCell.xib */; };
+		DF89E62E4AA707973642936E /* Pods_WooApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F363D79643C2002A6F3368 /* Pods_WooApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		017D10F71E779A910057A230 /* WooApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WooApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		017D10FA1E779A910057A230 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		017D10FC1E779A910057A230 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		017D10FF1E779A910057A230 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		017D11011E779A910057A230 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		017D11041E779A910057A230 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		017D11061E779A910057A230 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01C23D781E7A807100749C3D /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		01C23D791E7A807100749C3D /* CustomNavigationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomNavigationController.xib; sourceTree = "<group>"; };
+		01C23D7E1E7A823300749C3D /* HomeParentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeParentVC.swift; sourceTree = "<group>"; };
+		01C23D7F1E7A823300749C3D /* HomeParentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeParentVC.xib; sourceTree = "<group>"; };
+		01C23D851E7A83F100749C3D /* HomeNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNavigationBar.swift; sourceTree = "<group>"; };
+		01C23D871E7A83F900749C3D /* HomeNavigationBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeNavigationBar.xib; sourceTree = "<group>"; };
+		01FC42551E7B95CA00E028EA /* WooApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WooApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		01FC42561E7B95CB00E028EA /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		01FC42571E7B95CB00E028EA /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		01FC425A1E7BA68D00E028EA /* CustomBurgerMenuAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBurgerMenuAnimationView.swift; sourceTree = "<group>"; };
+		01FC425B1E7BA68D00E028EA /* QCMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QCMethod.swift; sourceTree = "<group>"; };
+		01FC42611E7BDE2D00E028EA /* SideMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
+		01FC42621E7BDE2D00E028EA /* SideMenuVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuVC.xib; sourceTree = "<group>"; };
+		01FC42651E7BE0C300E028EA /* SideMenuTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTableCell.swift; sourceTree = "<group>"; };
+		01FC42661E7BE0C300E028EA /* SideMenuTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuTableCell.xib; sourceTree = "<group>"; };
+		01FC426A1E7BE6A700E028EA /* StoreHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreHomeVC.swift; sourceTree = "<group>"; };
+		01FC426B1E7BE6A700E028EA /* StoreHomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoreHomeVC.xib; sourceTree = "<group>"; };
+		01FC426F1E7BE6C500E028EA /* CategoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryVC.swift; sourceTree = "<group>"; };
+		01FC42701E7BE6C500E028EA /* CategoryVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryVC.xib; sourceTree = "<group>"; };
+		01FC42741E7BF0A800E028EA /* CategoryTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableCell.swift; sourceTree = "<group>"; };
+		01FC42751E7BF0A800E028EA /* CategoryTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryTableCell.xib; sourceTree = "<group>"; };
+		59F363D79643C2002A6F3368 /* Pods_WooApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WooApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0E4EBB93FBBC3F7D8016077 /* Pods-WooApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WooApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WooApp/Pods-WooApp.release.xcconfig"; sourceTree = "<group>"; };
+		DCCA088BA575B7067B61B337 /* Pods-WooApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WooApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WooApp/Pods-WooApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF89E62E4AA707973642936E /* Pods_WooApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +83,8 @@
 			children = (
 				017D10F91E779A910057A230 /* WooApp */,
 				017D10F81E779A910057A230 /* Products */,
+				255886C1D34474E3A413492C /* Pods */,
+				30248639376A1966C924C9AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +99,211 @@
 		017D10F91E779A910057A230 /* WooApp */ = {
 			isa = PBXGroup;
 			children = (
-				017D10FA1E779A910057A230 /* AppDelegate.swift */,
-				017D10FC1E779A910057A230 /* ViewController.swift */,
+				01FC42531E7B959A00E028EA /* Library */,
+				01FC424C1E7B944100E028EA /* Supporting Files */,
+				01C23D821E7A839000749C3D /* View */,
+				01C23D761E7A5C0900749C3D /* ViewModels */,
+				01C23D751E7A5C0300749C3D /* Models */,
+				01C23D741E7A5BF300749C3D /* ViewControllers */,
 				017D10FE1E779A910057A230 /* Main.storyboard */,
-				017D11011E779A910057A230 /* Assets.xcassets */,
-				017D11031E779A910057A230 /* LaunchScreen.storyboard */,
-				017D11061E779A910057A230 /* Info.plist */,
 			);
 			path = WooApp;
+			sourceTree = "<group>";
+		};
+		01C23D741E7A5BF300749C3D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				01FC426E1E7BE6AC00E028EA /* CategoryVC */,
+				01FC42691E7BE67B00E028EA /* StoreHomeVC */,
+				01FC42521E7B94DA00E028EA /* SWRevealVC */,
+				01FC424D1E7B947C00E028EA /* SideMenuVC */,
+				01C23D7C1E7A81FD00749C3D /* HomeParentVC */,
+				01C23D771E7A802900749C3D /* Custom Navigation Controller */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		01C23D751E7A5C0300749C3D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		01C23D761E7A5C0900749C3D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		01C23D771E7A802900749C3D /* Custom Navigation Controller */ = {
+			isa = PBXGroup;
+			children = (
+				01C23D781E7A807100749C3D /* CustomNavigationController.swift */,
+				01C23D791E7A807100749C3D /* CustomNavigationController.xib */,
+			);
+			name = "Custom Navigation Controller";
+			sourceTree = "<group>";
+		};
+		01C23D7C1E7A81FD00749C3D /* HomeParentVC */ = {
+			isa = PBXGroup;
+			children = (
+				01C23D7E1E7A823300749C3D /* HomeParentVC.swift */,
+				01C23D7F1E7A823300749C3D /* HomeParentVC.xib */,
+			);
+			name = HomeParentVC;
+			sourceTree = "<group>";
+		};
+		01C23D821E7A839000749C3D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				01FC425E1E7BDAD100E028EA /* Cell */,
+				01FC42591E7BA67100E028EA /* BurgerCrossAnimationView */,
+				01C23D831E7A839800749C3D /* NavigationBar */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		01C23D831E7A839800749C3D /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				01C23D841E7A83C100749C3D /* HomeNavigationBar */,
+			);
+			name = NavigationBar;
+			sourceTree = "<group>";
+		};
+		01C23D841E7A83C100749C3D /* HomeNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				01C23D851E7A83F100749C3D /* HomeNavigationBar.swift */,
+				01C23D871E7A83F900749C3D /* HomeNavigationBar.xib */,
+			);
+			name = HomeNavigationBar;
+			sourceTree = "<group>";
+		};
+		01FC424C1E7B944100E028EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01FC42551E7B95CA00E028EA /* WooApp-Bridging-Header.h */,
+				017D11031E779A910057A230 /* LaunchScreen.storyboard */,
+				017D11011E779A910057A230 /* Assets.xcassets */,
+				017D10FA1E779A910057A230 /* AppDelegate.swift */,
+				017D11061E779A910057A230 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		01FC424D1E7B947C00E028EA /* SideMenuVC */ = {
+			isa = PBXGroup;
+			children = (
+				01FC42611E7BDE2D00E028EA /* SideMenuVC.swift */,
+				01FC42621E7BDE2D00E028EA /* SideMenuVC.xib */,
+			);
+			name = SideMenuVC;
+			sourceTree = "<group>";
+		};
+		01FC42521E7B94DA00E028EA /* SWRevealVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SWRevealVC;
+			sourceTree = "<group>";
+		};
+		01FC42531E7B959A00E028EA /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				01FC42541E7B95A400E028EA /* SWRevealViewController */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		01FC42541E7B95A400E028EA /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				01FC42561E7B95CB00E028EA /* SWRevealViewController.h */,
+				01FC42571E7B95CB00E028EA /* SWRevealViewController.m */,
+			);
+			name = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		01FC42591E7BA67100E028EA /* BurgerCrossAnimationView */ = {
+			isa = PBXGroup;
+			children = (
+				01FC425A1E7BA68D00E028EA /* CustomBurgerMenuAnimationView.swift */,
+				01FC425B1E7BA68D00E028EA /* QCMethod.swift */,
+			);
+			name = BurgerCrossAnimationView;
+			sourceTree = "<group>";
+		};
+		01FC425E1E7BDAD100E028EA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				01FC425F1E7BDAD700E028EA /* TableView */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		01FC425F1E7BDAD700E028EA /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				01FC42731E7BF08200E028EA /* CategoryTableCell */,
+				01FC42601E7BDADE00E028EA /* SideMenu */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		01FC42601E7BDADE00E028EA /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				01FC42651E7BE0C300E028EA /* SideMenuTableCell.swift */,
+				01FC42661E7BE0C300E028EA /* SideMenuTableCell.xib */,
+			);
+			name = SideMenu;
+			sourceTree = "<group>";
+		};
+		01FC42691E7BE67B00E028EA /* StoreHomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				01FC426A1E7BE6A700E028EA /* StoreHomeVC.swift */,
+				01FC426B1E7BE6A700E028EA /* StoreHomeVC.xib */,
+			);
+			name = StoreHomeVC;
+			sourceTree = "<group>";
+		};
+		01FC426E1E7BE6AC00E028EA /* CategoryVC */ = {
+			isa = PBXGroup;
+			children = (
+				01FC426F1E7BE6C500E028EA /* CategoryVC.swift */,
+				01FC42701E7BE6C500E028EA /* CategoryVC.xib */,
+			);
+			name = CategoryVC;
+			sourceTree = "<group>";
+		};
+		01FC42731E7BF08200E028EA /* CategoryTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				01FC42741E7BF0A800E028EA /* CategoryTableCell.swift */,
+				01FC42751E7BF0A800E028EA /* CategoryTableCell.xib */,
+			);
+			name = CategoryTableCell;
+			sourceTree = "<group>";
+		};
+		255886C1D34474E3A413492C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCCA088BA575B7067B61B337 /* Pods-WooApp.debug.xcconfig */,
+				A0E4EBB93FBBC3F7D8016077 /* Pods-WooApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		30248639376A1966C924C9AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59F363D79643C2002A6F3368 /* Pods_WooApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +313,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 017D11091E779A910057A230 /* Build configuration list for PBXNativeTarget "WooApp" */;
 			buildPhases = (
+				59681994E679F8F627127E68 /* [CP] Check Pods Manifest.lock */,
 				017D10F31E779A910057A230 /* Sources */,
 				017D10F41E779A910057A230 /* Frameworks */,
 				017D10F51E779A910057A230 /* Resources */,
+				39C86BDE9812B2AD8D25E898 /* [CP] Embed Pods Frameworks */,
+				5B4B482F1B4A78CA41980166 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +342,7 @@
 					017D10F61E779A910057A230 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = SHCA292N7G;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,21 +370,87 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01FC42681E7BE0C300E028EA /* SideMenuTableCell.xib in Resources */,
+				01C23D881E7A83F900749C3D /* HomeNavigationBar.xib in Resources */,
 				017D11051E779A910057A230 /* LaunchScreen.storyboard in Resources */,
 				017D11021E779A910057A230 /* Assets.xcassets in Resources */,
+				01FC42641E7BDE2D00E028EA /* SideMenuVC.xib in Resources */,
+				01FC42771E7BF0A800E028EA /* CategoryTableCell.xib in Resources */,
+				01C23D7B1E7A807100749C3D /* CustomNavigationController.xib in Resources */,
+				01FC42721E7BE6C500E028EA /* CategoryVC.xib in Resources */,
 				017D11001E779A910057A230 /* Main.storyboard in Resources */,
+				01C23D811E7A823300749C3D /* HomeParentVC.xib in Resources */,
+				01FC426D1E7BE6A700E028EA /* StoreHomeVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39C86BDE9812B2AD8D25E898 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WooApp/Pods-WooApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59681994E679F8F627127E68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5B4B482F1B4A78CA41980166 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WooApp/Pods-WooApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		017D10F31E779A910057A230 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				017D10FD1E779A910057A230 /* ViewController.swift in Sources */,
+				01C23D7A1E7A807100749C3D /* CustomNavigationController.swift in Sources */,
+				01C23D861E7A83F100749C3D /* HomeNavigationBar.swift in Sources */,
+				01C23D801E7A823300749C3D /* HomeParentVC.swift in Sources */,
+				01FC425C1E7BA68D00E028EA /* CustomBurgerMenuAnimationView.swift in Sources */,
 				017D10FB1E779A910057A230 /* AppDelegate.swift in Sources */,
+				01FC42711E7BE6C500E028EA /* CategoryVC.swift in Sources */,
+				01FC426C1E7BE6A700E028EA /* StoreHomeVC.swift in Sources */,
+				01FC425D1E7BA68D00E028EA /* QCMethod.swift in Sources */,
+				01FC42761E7BF0A800E028EA /* CategoryTableCell.swift in Sources */,
+				01FC42631E7BDE2D00E028EA /* SideMenuVC.swift in Sources */,
+				01FC42581E7B95CB00E028EA /* SWRevealViewController.m in Sources */,
+				01FC42671E7BE0C300E028EA /* SideMenuTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,26 +571,33 @@
 		};
 		017D110A1E779A910057A230 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCCA088BA575B7067B61B337 /* Pods-WooApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = SHCA292N7G;
 				INFOPLIST_FILE = WooApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.creatudevelopers.woocommerse.WooApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WooApp/WooApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		017D110B1E779A910057A230 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0E4EBB93FBBC3F7D8016077 /* Pods-WooApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = SHCA292N7G;
 				INFOPLIST_FILE = WooApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.creatudevelopers.woocommerse.WooApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WooApp/WooApp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -302,6 +621,7 @@
 				017D110B1E779A910057A230 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

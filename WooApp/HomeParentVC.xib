@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeParentVC" customModule="WooApp" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonBarView" destination="kej-eb-bTO" id="1Di-4J-UjL"/>
+                <outlet property="containerView" destination="ZO4-xc-9fb" id="tsr-B1-kgM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFit" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOG-80-l9F">
+                    <rect key="frame" x="103" y="-4" width="171" height="69"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="69" id="Cmx-Ro-ZEs"/>
+                        <constraint firstAttribute="width" constant="171" id="TmT-xu-fEX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="86"/>
+                    <state key="normal" title="B">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="kej-eb-bTO" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                    <rect key="frame" x="0.0" y="65" width="375" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="g1a-nY-opZ"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KNW-AZ-kaA">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZO4-xc-9fb">
+                    <rect key="frame" x="0.0" y="104" width="375" height="563"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.22100534041487349" green="0.44792343375029003" blue="0.460453737915544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DOG-80-l9F" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-4" id="563-Jq-PE1"/>
+                <constraint firstAttribute="trailing" secondItem="ZO4-xc-9fb" secondAttribute="trailing" id="90X-Yp-BxQ"/>
+                <constraint firstItem="kej-eb-bTO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Cbz-ij-6rc"/>
+                <constraint firstItem="DOG-80-l9F" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="103" id="U7h-k8-IOt"/>
+                <constraint firstAttribute="bottom" secondItem="ZO4-xc-9fb" secondAttribute="bottom" id="YgC-7y-1fq"/>
+                <constraint firstAttribute="trailing" secondItem="DOG-80-l9F" secondAttribute="trailing" constant="101" id="lGt-G6-hDK"/>
+                <constraint firstItem="kej-eb-bTO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="r4e-q5-RZQ"/>
+                <constraint firstAttribute="trailing" secondItem="kej-eb-bTO" secondAttribute="trailing" id="wB2-v5-hIO"/>
+                <constraint firstItem="ZO4-xc-9fb" firstAttribute="top" secondItem="kej-eb-bTO" secondAttribute="bottom" constant="-1" id="wGU-EN-KZN"/>
+                <constraint firstItem="ZO4-xc-9fb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zAy-su-lig"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

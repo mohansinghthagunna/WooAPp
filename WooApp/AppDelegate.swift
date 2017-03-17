@@ -16,6 +16,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //set initial viewcontroller
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let swrVC = SWRevealViewController()
+        let sideMenu = SideMenuVC()
+        let frontNav = CustomNavigationController()
+        let frontHome = HomeParentVC()
+        frontNav.setViewControllers([frontHome], animated: true)
+        swrVC.setFront(frontNav, animated: true)
+        swrVC.setRear(sideMenu, animated: true)
+        self.window?.rootViewController = swrVC
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 

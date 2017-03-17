@@ -1,0 +1,6 @@
+framework module Pods_WooApp {
+  umbrella header "Pods-WooApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
