@@ -11,6 +11,18 @@ import XLPagerTabStrip
 
 class HomeParentVC: ButtonBarPagerTabStripViewController {
 
+    var parentVC:ParentVCFor?
+    
+    init(parent:ParentVCFor) {
+        super.init(nibName: nil, bundle: nil)
+        parentVC = parent
+    }
+    
+    
+    required init?(coder aDecoder: NSCoder) {
+       super.init(coder: aDecoder)
+    }
+    
     override func viewDidLoad() {
         // change selected bar color
         settings.style.buttonBarBackgroundColor = .white
@@ -36,9 +48,23 @@ class HomeParentVC: ButtonBarPagerTabStripViewController {
     // MARK: - PagerTabStripDataSource
     
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
-        let child_1 = StoreHomeVC( itemInfo: "STORE")
-        let child_2 = CategoryVC(itemInfo: "CATEGORIES")
-        return [child_1, child_2]
+        switch parentVC! {
+        case .Home:
+            let child_1 = StoreHomeVC( itemInfo: "STORE")
+            let child_2 = CategoryVC(itemInfo: "CATEGORIES")
+            return [child_1, child_2]
+        case .ItemDetails:
+            let child_1 = ItemDetailVC( itemInfo: "DETAILS")
+            let child_2 = ItemReviewVC(itemInfo: "REVIEW")
+            let child_3 = SimilarItemsVC(itemInfo: "SIMILAR")
+            return [child_1, child_2, child_3]
+        case .MyCart:
+            let child_1 = MyCartListVC( itemInfo: "MY CART")
+            let child_2 = CartCouponVC(itemInfo: "COUPON")
+            let child_3 = CartTotalAmountVC(itemInfo: "TOTAL AMOUNT")
+            return [child_1, child_2, child_3]
+        }
+      
     }
 
 }

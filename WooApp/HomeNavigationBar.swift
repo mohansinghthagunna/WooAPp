@@ -10,14 +10,17 @@ import UIKit
 protocol homeNavBarDelegates {
     func btnSideMenuTapped()
 }
-class HomeNavigationBar: UIView {
+
+
+@IBDesignable class HomeNavigationBar: UIView {
     static var shared:UIView?
     var delegate:homeNavBarDelegates?
     var view:UIView!
 
+    @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var customBurgerMenuView: CustomBurgerMenuAnimationView!
     
-    init() {
+   init() {
          super.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 70))
         self.xibSetup()
     }
@@ -46,9 +49,6 @@ class HomeNavigationBar: UIView {
         addSubview(view)
     }
     
-    func update(){
-        
-    }
     
     override func layoutSubviews() {
         
@@ -77,6 +77,10 @@ extension HomeNavigationBar{
         else{
            customBurgerMenuView.addCrossToBurgerAnimation()
         }
+        
+    }
+    
+    func updateView(vc CurrentVC:UIViewController){
         
     }
 }

@@ -41,9 +41,10 @@ extension CustomNavigationController{
             self.view.addSubview(objHomeNavBar)
     }
     
-    func burgerMenuUpdate(){
+    func updateNavigationBar(){
         if self.viewControllers.count > 1{
             self.popViewController(animated: true)
+            objHomeNavBar.updateView(vc: self.visibleViewController!)
             if self.viewControllers.count == 1{
               sideMenuClosed()
             }
@@ -55,7 +56,7 @@ extension CustomNavigationController{
     
     func sideMenuOpen(){
        // viewNavigationBar?.customBurgerMenuView.addBurgerCrossAnimationAnimation()
-         objHomeNavBar.sideMenuState(flag: true)
+        objHomeNavBar.sideMenuState(flag: true)
         let mainVC = (self.revealViewController().frontViewController as! UINavigationController).visibleViewController
         mainVC?.view.isUserInteractionEnabled = false
     }
@@ -78,7 +79,7 @@ extension CustomNavigationController{
 //MARK:- Home navigation bar delegates
 extension CustomNavigationController:homeNavBarDelegates{
     func btnSideMenuTapped() {
-         burgerMenuUpdate()
+         updateNavigationBar()
     }
 }
 

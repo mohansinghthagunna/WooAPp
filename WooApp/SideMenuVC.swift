@@ -9,8 +9,27 @@
 import UIKit
 
 class SideMenuVC: UIViewController {
-
+    //MARK:- Declarations
+    let sideMenuItem = [["title":"STORE",
+                         "image":"",
+                         "login":false],
+                        ["title":"CATEGORIES",
+                         "image":"",
+                         "login":false],
+                        ["title":"CART",
+                         "image":"",
+                         "login":false],
+                        ["title":"SETTINGS",
+                         "image":"",
+                         "login":false],
+                        ["title":"LOGIN",
+                         "image":"",
+                         "login":false]]
+    //MARK:- Outlets
     @IBOutlet weak var tableView: UITableView!
+    
+    
+    //MARK:- VC Property
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,11 +41,13 @@ class SideMenuVC: UIViewController {
 
 extension SideMenuVC:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return sideMenuItem.count + 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableCell") as! SideMenuTableCell
+        let data = SideMenuViewModel().getMenuValue(at: indexPath.row)
+        cell.configureCellForMenu(title: data.menuTitle, image:  data.menuImageIcon)
         return cell
     }
     
@@ -37,9 +58,9 @@ extension SideMenuVC:UITableViewDelegate,UITableViewDataSource{
             break
         case 1:
             let mainVC = self.revealViewController().frontViewController as! UINavigationController
-            if !((mainVC.visibleViewController?.isKind(of: HomeParentVC.self))!)
+            if (!((mainVC.visibleViewController?.isKind(of: HomeParentVC.self))!) || (mainVC.visibleViewController as! HomeParentVC).parentVC != ParentVCFor.Home)
             {
-                mainVC.setViewControllers([HomeParentVC()], animated: true)
+                mainVC.setViewControllers([HomeParentVC(parent:ParentVCFor.Home)], animated: true)
             }
             break
             
@@ -50,6 +71,17 @@ extension SideMenuVC:UITableViewDelegate,UITableViewDataSource{
                 mainVC.setViewControllers([CategoryVC()], animated: true)
             }
             break
+        case 3:
+            let mainVC = self.revealViewController().frontViewController as! UINavigationController
+            if (!((mainVC.visibleViewController?.isKind(of: HomeParentVC.self))!) || (mainVC.visibleViewController as! HomeParentVC).parentVC != ParentVCFor.MyCart)
+            {
+                mainVC.setViewControllers([HomeParentVC(parent:ParentVCFor.MyCart)], animated: true)
+            }
+            else{
+                
+            }
+            break
+
         default:
             
             break

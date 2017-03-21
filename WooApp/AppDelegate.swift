@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let swrVC = SWRevealViewController()
         let sideMenu = SideMenuVC()
         let frontNav = CustomNavigationController()
-        let frontHome = HomeParentVC()
+        let frontHome = HomeParentVC(parent:ParentVCFor.Home)
         frontNav.setViewControllers([frontHome], animated: true)
         swrVC.setFront(frontNav, animated: true)
         swrVC.setRear(sideMenu, animated: true)
