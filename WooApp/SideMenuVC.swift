@@ -53,6 +53,7 @@ extension SideMenuVC:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
+        
         switch indexPath.row {
         case 0:
             break
@@ -79,6 +80,13 @@ extension SideMenuVC:UITableViewDelegate,UITableViewDataSource{
             }
             else{
                 
+            }
+            break
+        case 4:
+            let mainVC = self.revealViewController().frontViewController as! UINavigationController
+            if !((mainVC.visibleViewController?.isKind(of: SettingVC.self))!)
+            {
+                mainVC.setViewControllers([SettingVC()], animated: true)
             }
             break
 

@@ -13,10 +13,14 @@ protocol homeNavBarDelegates {
 
 
 @IBDesignable class HomeNavigationBar: UIView {
+    
+    //MARK:Declarations
     static var shared:UIView?
     var delegate:homeNavBarDelegates?
     var view:UIView!
-
+    var navbarVMObj = HomeNavigationViewModel()
+    
+    
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var customBurgerMenuView: CustomBurgerMenuAnimationView!
     
@@ -81,6 +85,6 @@ extension HomeNavigationBar{
     }
     
     func updateView(vc CurrentVC:UIViewController){
-        
+     lblTitle.text = navbarVMObj.getNavTitle(vc: CurrentVC)
     }
 }

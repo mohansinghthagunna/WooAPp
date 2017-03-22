@@ -17,7 +17,8 @@ class CategoryVC: UIViewController,IndicatorInfoProvider {
     //MARK:- declarations
     var itemInfo: IndicatorInfo = "View"
     var isParent = true
-    
+    var isCategory = true
+    var categoryViewModelObj:CategoryViewModel?
     //MARK:- vc Property
     init(itemInfo: IndicatorInfo) {
         self.itemInfo = itemInfo
@@ -38,6 +39,7 @@ class CategoryVC: UIViewController,IndicatorInfoProvider {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        categoryViewModelObj = CategoryViewModel(isCategory: isCategory)
         tableView.register(UINib(nibName:"CategoryTableCell",bundle:nil), forCellReuseIdentifier: "TableCell")
         if isParent{
             topMargin.constant = 0 
@@ -59,18 +61,28 @@ class CategoryVC: UIViewController,IndicatorInfoProvider {
 //MARK:- Table View Delegates
 extension CategoryVC:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return categoryViewModelObj!.getTotalNumberOfItems()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableCell") as! CategoryTableCell
+        
+        cell.configureCellForCategory(At: indexPath,viewModelObj:categoryViewModelObj!)
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if isCategory{
         tableView.deselectRow(at: indexPath, animated: false)
-        self.navigationController?.pushViewController(CategoryVC(), animated: true)
+        let catVC = CategoryVC()
+        catVC.isCategory = false
+        self.navigationController?.pushViewController(catVC, animated: true)
         (self.navigationController as! CustomNavigationController).pushViewController()
+        }
+        else{
+            self.navigationController?.pushViewController(HomeParentVC(parent:ParentVCFor.ItemDetails), animated: true)
+            (self.navigationController as! CustomNavigationController).pushViewController()
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

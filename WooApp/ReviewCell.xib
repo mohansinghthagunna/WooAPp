@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableCell" rowHeight="83" id="KGk-i7-Jjw" customClass="ReviewCell" customModule="WooApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="hqy-4y-d9A">
+                        <rect key="frame" x="8" y="8" width="73" height="67"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="67" id="LmG-WX-9Nc"/>
+                            <constraint firstAttribute="width" constant="73" id="dN1-6f-LcL"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mohan Singh Thagunna" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3D8-8o-Qk4">
+                        <rect key="frame" x="89" y="4" width="223" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="dMn-bP-MUm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xc-Fv-HrB">
+                        <rect key="frame" x="89" y="39" width="223" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.3501266702747089" green="0.37339812349417389" blue="0.41049333756345174" alpha="0.70018193493150682" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hqy-4y-d9A" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="27b-03-KHv"/>
+                    <constraint firstAttribute="bottom" secondItem="2xc-Fv-HrB" secondAttribute="bottom" constant="7" id="BR4-Pn-pto"/>
+                    <constraint firstItem="2xc-Fv-HrB" firstAttribute="leading" secondItem="hqy-4y-d9A" secondAttribute="trailing" constant="8" id="NxE-g4-hvR"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="hqy-4y-d9A" secondAttribute="bottom" constant="7" id="Qcu-0K-DD2"/>
+                    <constraint firstItem="3D8-8o-Qk4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-4" id="R3y-Cr-XN9"/>
+                    <constraint firstItem="3D8-8o-Qk4" firstAttribute="leading" secondItem="hqy-4y-d9A" secondAttribute="trailing" constant="8" id="UtR-U0-yOj"/>
+                    <constraint firstItem="2xc-Fv-HrB" firstAttribute="top" secondItem="3D8-8o-Qk4" secondAttribute="bottom" constant="5" id="WBU-gH-Lvu"/>
+                    <constraint firstItem="3D8-8o-Qk4" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="pZe-b9-pwz"/>
+                    <constraint firstItem="hqy-4y-d9A" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="rHW-j3-Eg9"/>
+                    <constraint firstAttribute="trailing" secondItem="2xc-Fv-HrB" secondAttribute="trailing" constant="8" id="rg0-1G-ICQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="imgUserProfile" destination="hqy-4y-d9A" id="ZrB-44-n5t"/>
+                <outlet property="lblFeedback" destination="2xc-Fv-HrB" id="JVM-Rl-RLq"/>
+                <outlet property="lblUserName" destination="3D8-8o-Qk4" id="RE6-Tp-X2X"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="71.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="test" width="360" height="640"/>
+    </resources>
+</document>

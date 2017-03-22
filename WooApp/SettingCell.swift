@@ -1,17 +1,16 @@
 //
-//  SideMenuTableCell.swift
+//  SettingCell.swift
 //  WooApp
 //
-//  Created by Mohan on 3/17/17.
+//  Created by Mohan on 3/22/17.
 //  Copyright © 2017 Mohan. All rights reserved.
 //
 
 import UIKit
 
-class SideMenuTableCell: UITableViewCell {
+class SettingCell: UITableViewCell {
 
     @IBOutlet weak var lblTitle: UILabel!
-    @IBOutlet weak var imgIcon: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,9 +22,8 @@ class SideMenuTableCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configureCellForMenu(title:String,image:String){
-        imgIcon.image = UIImage(named:"test")
-        lblTitle.text = title
+    func configureCellForSetting(indexPath:IndexPath){
+        lblTitle.text = Constants.SettingListItem[indexPath.row]
     }
     
 }

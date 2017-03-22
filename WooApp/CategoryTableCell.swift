@@ -10,21 +10,25 @@ import UIKit
 
 class CategoryTableCell: UITableViewCell {
 
+    var viewModelObj:CategoryViewModel?
+    
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var cellBGImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
     override func layoutSubviews() {
         cellBGImage.clipsToBounds = true
+    }
+    
+    func configureCellForCategory(At indexPath:IndexPath,viewModelObj:CategoryViewModel){
+        self.viewModelObj = viewModelObj
+        let item = viewModelObj.getCategorList(At: indexPath.row)
+        lblTitle.text = item.Title
+        cellBGImage.image = UIImage(named:item.Image)
     }
     
 }

@@ -21,6 +21,7 @@ class CustomNavigationController: UINavigationController {
     override func viewWillAppear(_ animated: Bool) {
         setRevealElement()
         setupNavigationBar()
+        setViewController()
     }
 
 }
@@ -47,6 +48,7 @@ extension CustomNavigationController{
             objHomeNavBar.updateView(vc: self.visibleViewController!)
             if self.viewControllers.count == 1{
               sideMenuClosed()
+                 self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
             }
         }
         else{
@@ -68,9 +70,15 @@ extension CustomNavigationController{
     }
     
     func pushViewController(){
+        objHomeNavBar.updateView(vc: self.visibleViewController!)
         if self.viewControllers.count == 2{
         objHomeNavBar.sideMenuState(flag: true)
         }
+         self.view.removeGestureRecognizer(self.revealViewController().panGestureRecognizer())
+    }
+    
+    func setViewController(){
+    objHomeNavBar.updateView(vc: self.visibleViewController!)
     }
     
 
@@ -86,6 +94,7 @@ extension CustomNavigationController:homeNavBarDelegates{
 //MARK:- SWReveal View Controller delegates
 extension CustomNavigationController:SWRevealViewControllerDelegate{
     func revealController(_ revealController: SWRevealViewController!, willMoveTo position: FrontViewPosition) {
+        setViewController()
         switch(position){
   
         case FrontViewPosition.left:
