@@ -26,6 +26,24 @@
 		010F29F21E80DEBD0090164A /* SimilarItemsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 010F29F01E80DEBD0090164A /* SimilarItemsVC.xib */; };
 		010F29F41E80E0D50090164A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010F29F31E80E0D50090164A /* Color.swift */; };
 		010F29F71E80E80D0090164A /* HomeNavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010F29F61E80E80D0090164A /* HomeNavigationViewModel.swift */; };
+		012333FA1E839FF600B6CF51 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012333F81E839FF600B6CF51 /* LoginVC.swift */; };
+		012333FB1E839FF600B6CF51 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 012333F91E839FF600B6CF51 /* LoginVC.xib */; };
+		012333FF1E83B9CF00B6CF51 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012333FD1E83B9CF00B6CF51 /* RegisterVC.swift */; };
+		012334001E83B9CF00B6CF51 /* RegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 012333FE1E83B9CF00B6CF51 /* RegisterVC.xib */; };
+		012334041E83BF4200B6CF51 /* UpdateProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012334021E83BF4200B6CF51 /* UpdateProfileVC.swift */; };
+		012334051E83BF4200B6CF51 /* UpdateProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 012334031E83BF4200B6CF51 /* UpdateProfileVC.xib */; };
+		0123340A1E83C49C00B6CF51 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012334081E83C49C00B6CF51 /* ForgotPasswordVC.swift */; };
+		0123340B1E83C49C00B6CF51 /* ForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 012334091E83C49C00B6CF51 /* ForgotPasswordVC.xib */; };
+		0123340E1E83C4AD00B6CF51 /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0123340C1E83C4AD00B6CF51 /* ChangePasswordVC.swift */; };
+		0123340F1E83C4AD00B6CF51 /* ChangePasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0123340D1E83C4AD00B6CF51 /* ChangePasswordVC.xib */; };
+		012334111E83D15C00B6CF51 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012334101E83D15C00B6CF51 /* LoginViewModel.swift */; };
+		012334131E83D7B200B6CF51 /* ConstantFileNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012334121E83D7B200B6CF51 /* ConstantFileNames.swift */; };
+		0123341A1E83E83400B6CF51 /* WishListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012334181E83E83400B6CF51 /* WishListVC.swift */; };
+		0123341B1E83E83400B6CF51 /* WishListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 012334191E83E83400B6CF51 /* WishListVC.xib */; };
+		0123341E1E83E84400B6CF51 /* BillingAddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0123341C1E83E84400B6CF51 /* BillingAddressVC.swift */; };
+		0123341F1E83E84400B6CF51 /* BillingAddressVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0123341D1E83E84400B6CF51 /* BillingAddressVC.xib */; };
+		012334231E83E85A00B6CF51 /* OrderHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012334211E83E85A00B6CF51 /* OrderHistoryVC.swift */; };
+		012334241E83E85A00B6CF51 /* OrderHistoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 012334221E83E85A00B6CF51 /* OrderHistoryVC.xib */; };
 		017D10FB1E779A910057A230 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017D10FA1E779A910057A230 /* AppDelegate.swift */; };
 		017D11001E779A910057A230 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017D10FE1E779A910057A230 /* Main.storyboard */; };
 		017D11021E779A910057A230 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 017D11011E779A910057A230 /* Assets.xcassets */; };
@@ -81,6 +99,24 @@
 		010F29F01E80DEBD0090164A /* SimilarItemsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimilarItemsVC.xib; sourceTree = "<group>"; };
 		010F29F31E80E0D50090164A /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		010F29F61E80E80D0090164A /* HomeNavigationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNavigationViewModel.swift; sourceTree = "<group>"; };
+		012333F81E839FF600B6CF51 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		012333F91E839FF600B6CF51 /* LoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		012333FD1E83B9CF00B6CF51 /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		012333FE1E83B9CF00B6CF51 /* RegisterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterVC.xib; sourceTree = "<group>"; };
+		012334021E83BF4200B6CF51 /* UpdateProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateProfileVC.swift; sourceTree = "<group>"; };
+		012334031E83BF4200B6CF51 /* UpdateProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UpdateProfileVC.xib; sourceTree = "<group>"; };
+		012334081E83C49C00B6CF51 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		012334091E83C49C00B6CF51 /* ForgotPasswordVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgotPasswordVC.xib; sourceTree = "<group>"; };
+		0123340C1E83C4AD00B6CF51 /* ChangePasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
+		0123340D1E83C4AD00B6CF51 /* ChangePasswordVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangePasswordVC.xib; sourceTree = "<group>"; };
+		012334101E83D15C00B6CF51 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		012334121E83D7B200B6CF51 /* ConstantFileNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantFileNames.swift; sourceTree = "<group>"; };
+		012334181E83E83400B6CF51 /* WishListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishListVC.swift; sourceTree = "<group>"; };
+		012334191E83E83400B6CF51 /* WishListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WishListVC.xib; sourceTree = "<group>"; };
+		0123341C1E83E84400B6CF51 /* BillingAddressVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillingAddressVC.swift; sourceTree = "<group>"; };
+		0123341D1E83E84400B6CF51 /* BillingAddressVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BillingAddressVC.xib; sourceTree = "<group>"; };
+		012334211E83E85A00B6CF51 /* OrderHistoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderHistoryVC.swift; sourceTree = "<group>"; };
+		012334221E83E85A00B6CF51 /* OrderHistoryVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderHistoryVC.xib; sourceTree = "<group>"; };
 		017D10F71E779A910057A230 /* WooApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WooApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		017D10FA1E779A910057A230 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		017D10FF1E779A910057A230 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -141,19 +177,21 @@
 				010F29F61E80E80D0090164A /* HomeNavigationViewModel.swift */,
 				01FF699E1E82815C008F729C /* CaegoryViewModel.swift */,
 				01FF69A41E829475008F729C /* ReviewViewModel.swift */,
+				012334101E83D15C00B6CF51 /* LoginViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
 		};
-		0102C7621E7FAC71005A71B0 /* Universal Constants */ = {
+		0102C7621E7FAC71005A71B0 /* Universal Helper */ = {
 			isa = PBXGroup;
 			children = (
 				0102C7631E7FAD9C005A71B0 /* Constants.swift */,
 				010F29E21E80D5C60090164A /* Enum.swift */,
 				010F29F31E80E0D50090164A /* Color.swift */,
 				01FF69991E8271B7008F729C /* UserDefault.swift */,
+				012334121E83D7B200B6CF51 /* ConstantFileNames.swift */,
 			);
-			name = "Universal Constants";
+			name = "Universal Helper";
 			sourceTree = "<group>";
 		};
 		0102C76A1E7FE074005A71B0 /* MyCartListVC */ = {
@@ -219,6 +257,78 @@
 			name = SimilarItemVC;
 			sourceTree = "<group>";
 		};
+		012333F31E839F0500B6CF51 /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				012333F81E839FF600B6CF51 /* LoginVC.swift */,
+				012333F91E839FF600B6CF51 /* LoginVC.xib */,
+			);
+			name = LoginVC;
+			sourceTree = "<group>";
+		};
+		012333FC1E83B9BC00B6CF51 /* RegisterVC */ = {
+			isa = PBXGroup;
+			children = (
+				012333FD1E83B9CF00B6CF51 /* RegisterVC.swift */,
+				012333FE1E83B9CF00B6CF51 /* RegisterVC.xib */,
+			);
+			name = RegisterVC;
+			sourceTree = "<group>";
+		};
+		012334011E83BF2100B6CF51 /* UpdateProfileVC */ = {
+			isa = PBXGroup;
+			children = (
+				012334021E83BF4200B6CF51 /* UpdateProfileVC.swift */,
+				012334031E83BF4200B6CF51 /* UpdateProfileVC.xib */,
+			);
+			name = UpdateProfileVC;
+			sourceTree = "<group>";
+		};
+		012334061E83C40F00B6CF51 /* ChangePasswordVC */ = {
+			isa = PBXGroup;
+			children = (
+				0123340C1E83C4AD00B6CF51 /* ChangePasswordVC.swift */,
+				0123340D1E83C4AD00B6CF51 /* ChangePasswordVC.xib */,
+			);
+			name = ChangePasswordVC;
+			sourceTree = "<group>";
+		};
+		012334071E83C42800B6CF51 /* ForgotPasswordVC */ = {
+			isa = PBXGroup;
+			children = (
+				012334081E83C49C00B6CF51 /* ForgotPasswordVC.swift */,
+				012334091E83C49C00B6CF51 /* ForgotPasswordVC.xib */,
+			);
+			name = ForgotPasswordVC;
+			sourceTree = "<group>";
+		};
+		012334141E83E7E700B6CF51 /* WishlistVC */ = {
+			isa = PBXGroup;
+			children = (
+				012334181E83E83400B6CF51 /* WishListVC.swift */,
+				012334191E83E83400B6CF51 /* WishListVC.xib */,
+			);
+			name = WishlistVC;
+			sourceTree = "<group>";
+		};
+		012334151E83E7EF00B6CF51 /* BillingAddressVC */ = {
+			isa = PBXGroup;
+			children = (
+				0123341C1E83E84400B6CF51 /* BillingAddressVC.swift */,
+				0123341D1E83E84400B6CF51 /* BillingAddressVC.xib */,
+			);
+			name = BillingAddressVC;
+			sourceTree = "<group>";
+		};
+		012334171E83E81200B6CF51 /* OrderHistoryVC */ = {
+			isa = PBXGroup;
+			children = (
+				012334211E83E85A00B6CF51 /* OrderHistoryVC.swift */,
+				012334221E83E85A00B6CF51 /* OrderHistoryVC.xib */,
+			);
+			name = OrderHistoryVC;
+			sourceTree = "<group>";
+		};
 		017D10EE1E779A910057A230 = {
 			isa = PBXGroup;
 			children = (
@@ -240,7 +350,7 @@
 		017D10F91E779A910057A230 /* WooApp */ = {
 			isa = PBXGroup;
 			children = (
-				0102C7621E7FAC71005A71B0 /* Universal Constants */,
+				0102C7621E7FAC71005A71B0 /* Universal Helper */,
 				01FC42531E7B959A00E028EA /* Library */,
 				01FC424C1E7B944100E028EA /* Supporting Files */,
 				01C23D751E7A5C0300749C3D /* Models */,
@@ -255,6 +365,14 @@
 		01C23D741E7A5BF300749C3D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				012334171E83E81200B6CF51 /* OrderHistoryVC */,
+				012334151E83E7EF00B6CF51 /* BillingAddressVC */,
+				012334141E83E7E700B6CF51 /* WishlistVC */,
+				012334071E83C42800B6CF51 /* ForgotPasswordVC */,
+				012334061E83C40F00B6CF51 /* ChangePasswordVC */,
+				012334011E83BF2100B6CF51 /* UpdateProfileVC */,
+				012333FC1E83B9BC00B6CF51 /* RegisterVC */,
+				012333F31E839F0500B6CF51 /* LoginVC */,
 				01FF698E1E8241A1008F729C /* SettingVC */,
 				010F29E61E80DE6F0090164A /* SimilarItemVC */,
 				010F29E51E80DE650090164A /* ItemReviewVC */,
@@ -539,20 +657,28 @@
 				01FF69A31E82909F008F729C /* ReviewCell.xib in Resources */,
 				01FF69921E8241D2008F729C /* SettingVC.xib in Resources */,
 				0102C7741E7FE36F005A71B0 /* CartCouponVC.xib in Resources */,
+				012334241E83E85A00B6CF51 /* OrderHistoryVC.xib in Resources */,
 				01C23D881E7A83F900749C3D /* HomeNavigationBar.xib in Resources */,
 				017D11051E779A910057A230 /* LaunchScreen.storyboard in Resources */,
+				012334001E83B9CF00B6CF51 /* RegisterVC.xib in Resources */,
 				01FF69971E824209008F729C /* SettingCell.xib in Resources */,
 				0102C7781E7FE385005A71B0 /* CartTotalAmountVC.xib in Resources */,
 				017D11021E779A910057A230 /* Assets.xcassets in Resources */,
 				01FC42641E7BDE2D00E028EA /* SideMenuVC.xib in Resources */,
 				01FC42771E7BF0A800E028EA /* CategoryTableCell.xib in Resources */,
+				012333FB1E839FF600B6CF51 /* LoginVC.xib in Resources */,
 				01C23D7B1E7A807100749C3D /* CustomNavigationController.xib in Resources */,
 				01FC42721E7BE6C500E028EA /* CategoryVC.xib in Resources */,
 				017D11001E779A910057A230 /* Main.storyboard in Resources */,
+				0123340B1E83C49C00B6CF51 /* ForgotPasswordVC.xib in Resources */,
+				012334051E83BF4200B6CF51 /* UpdateProfileVC.xib in Resources */,
 				010F29EA1E80DE880090164A /* ItemDetailVC.xib in Resources */,
 				010F29F21E80DEBD0090164A /* SimilarItemsVC.xib in Resources */,
 				01C23D811E7A823300749C3D /* HomeParentVC.xib in Resources */,
 				01FC426D1E7BE6A700E028EA /* StoreHomeVC.xib in Resources */,
+				0123341B1E83E83400B6CF51 /* WishListVC.xib in Resources */,
+				0123340F1E83C4AD00B6CF51 /* ChangePasswordVC.xib in Resources */,
+				0123341F1E83E84400B6CF51 /* BillingAddressVC.xib in Resources */,
 				010F29EE1E80DEA60090164A /* ItemReviewVC.xib in Resources */,
 				0102C7851E7FED23005A71B0 /* MyCartListCellTableViewCell.xib in Resources */,
 			);
@@ -613,17 +739,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				012334041E83BF4200B6CF51 /* UpdateProfileVC.swift in Sources */,
+				0123341A1E83E83400B6CF51 /* WishListVC.swift in Sources */,
+				012333FA1E839FF600B6CF51 /* LoginVC.swift in Sources */,
 				01C23D7A1E7A807100749C3D /* CustomNavigationController.swift in Sources */,
 				0102C7731E7FE36F005A71B0 /* CartCouponVC.swift in Sources */,
 				010F29F41E80E0D50090164A /* Color.swift in Sources */,
 				01FF69A21E82909F008F729C /* ReviewCell.swift in Sources */,
+				0123340A1E83C49C00B6CF51 /* ForgotPasswordVC.swift in Sources */,
+				0123340E1E83C4AD00B6CF51 /* ChangePasswordVC.swift in Sources */,
+				012334111E83D15C00B6CF51 /* LoginViewModel.swift in Sources */,
 				01FF69A51E829475008F729C /* ReviewViewModel.swift in Sources */,
 				0102C7841E7FED23005A71B0 /* MyCartListCellTableViewCell.swift in Sources */,
 				010F29F11E80DEBD0090164A /* SimilarItemsVC.swift in Sources */,
 				010F29F71E80E80D0090164A /* HomeNavigationViewModel.swift in Sources */,
+				012333FF1E83B9CF00B6CF51 /* RegisterVC.swift in Sources */,
 				0102C76F1E7FE35A005A71B0 /* MyCartListVC.swift in Sources */,
 				01FF699F1E82815C008F729C /* CaegoryViewModel.swift in Sources */,
 				01C23D861E7A83F100749C3D /* HomeNavigationBar.swift in Sources */,
+				012334131E83D7B200B6CF51 /* ConstantFileNames.swift in Sources */,
 				01C23D801E7A823300749C3D /* HomeParentVC.swift in Sources */,
 				01FC425C1E7BA68D00E028EA /* CustomBurgerMenuAnimationView.swift in Sources */,
 				017D10FB1E779A910057A230 /* AppDelegate.swift in Sources */,
@@ -632,8 +766,10 @@
 				0102C7771E7FE385005A71B0 /* CartTotalAmountVC.swift in Sources */,
 				010F29ED1E80DEA60090164A /* ItemReviewVC.swift in Sources */,
 				01FC426C1E7BE6A700E028EA /* StoreHomeVC.swift in Sources */,
+				0123341E1E83E84400B6CF51 /* BillingAddressVC.swift in Sources */,
 				01FC425D1E7BA68D00E028EA /* QCMethod.swift in Sources */,
 				01FF69911E8241D2008F729C /* SettingVC.swift in Sources */,
+				012334231E83E85A00B6CF51 /* OrderHistoryVC.swift in Sources */,
 				0102C7611E7FABE9005A71B0 /* SideMenuViewModel.swift in Sources */,
 				01FC42761E7BF0A800E028EA /* CategoryTableCell.swift in Sources */,
 				01FF69961E824209008F729C /* SettingCell.swift in Sources */,

@@ -23,9 +23,10 @@ class SideMenuTableCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configureCellForMenu(title:String,image:String){
-        imgIcon.image = UIImage(named:"test")
-        lblTitle.text = title
+    func configureCellForMenu(At indexPath:IndexPath , sideMenuVMObj:SideMenuViewModel){
+        let data = sideMenuVMObj.getMenuValue(at: indexPath.row)
+        imgIcon.image = UIImage(named:data.menuImageIcon)
+        lblTitle.text = data.menuTitle
     }
     
 }

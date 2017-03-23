@@ -12,6 +12,7 @@ import XLPagerTabStrip
 class SimilarItemsVC: UIViewController ,IndicatorInfoProvider {
     
     //MARK:- Outlets
+    @IBOutlet weak var tableView: UITableView!
     
     
     //MARK:- declarations
@@ -30,9 +31,37 @@ class SimilarItemsVC: UIViewController ,IndicatorInfoProvider {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.register(UINib(nibName:"MyCartListCellTableViewCell",bundle:nil), forCellReuseIdentifier: "TableCell")
+    
     }
     
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
         return itemInfo
+    }
+    
+}
+
+//MARK:- Table View Delegates
+extension SimilarItemsVC:UITableViewDelegate,UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 6
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TableCell") as! MyCartListCellTableViewCell
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+       (self.parent as! HomeParentVC).moveToViewController(at: 0)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 180
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0.5
     }
 }

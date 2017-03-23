@@ -14,22 +14,22 @@ struct Constants {
     
     //MARK:- TABLE LIST ARRAYS
     static let SideMenuItem = [["title":"STORE",
-                                 "image":"",
+                                 "image":"test",
                                  "index":"1"],
                                 ["title":"CATEGORIES",
-                                 "image":"2",
+                                 "image":"test",
                                  "index":"2"],
                                 ["title":"CART",
-                                 "image":"3",
+                                 "image":"test",
                                  "index":"3"],
                                 ["title":"SETTINGS",
-                                 "image":"4",
+                                 "image":"test",
                                  "index":"4"],
                                 ["title":"LOGIN",
-                                 "image":"5",
+                                 "image":"test",
                                  "index":"5"]]
     static let SettingListItem = ["ACCOUNT INFORMATIONS","FAQ","LANGUAGE","CONTACT US","RATE THE APP"]
-
+    static let AccountSettingListItem = ["CHANGE PASSWORD","WISH LISTS","BILLING ADDRESS","ORDER HISTORY"]
     
     //MARK:- Nav titles
     struct NavigationTitleEng{
@@ -43,5 +43,12 @@ struct Constants {
     //MARK:- User Defaults
     struct UserDefault{
         static let Language = "Language"
+        static let IsLogin = "IsUserLogin"
+    }
+    
+    //MARK:- SideMenu Constants
+    struct SideMenu{
+        static let logout = "LOGOUT"
+        static let userName = "HI THERE!"
     }
 }

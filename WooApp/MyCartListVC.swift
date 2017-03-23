@@ -14,13 +14,13 @@ class MyCartListVC: UIViewController,IndicatorInfoProvider {
     @IBOutlet weak var tableView: UITableView!
     //MARK:- declarations
     var itemInfo: IndicatorInfo = "View"
-    var isParent = true
     
     //MARK:- vc Property
     init(itemInfo: IndicatorInfo) {
         self.itemInfo = itemInfo
         super.init(nibName: nil, bundle: nil)
     }
+    
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

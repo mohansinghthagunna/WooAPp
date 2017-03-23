@@ -10,21 +10,8 @@ import UIKit
 
 class SideMenuVC: UIViewController {
     //MARK:- Declarations
-    let sideMenuItem = [["title":"STORE",
-                         "image":"",
-                         "login":false],
-                        ["title":"CATEGORIES",
-                         "image":"",
-                         "login":false],
-                        ["title":"CART",
-                         "image":"",
-                         "login":false],
-                        ["title":"SETTINGS",
-                         "image":"",
-                         "login":false],
-                        ["title":"LOGIN",
-                         "image":"",
-                         "login":false]]
+    
+    let sideMenuVMObj = SideMenuViewModel()
     //MARK:- Outlets
     @IBOutlet weak var tableView: UITableView!
     
@@ -35,19 +22,22 @@ class SideMenuVC: UIViewController {
 
         tableView.register(UINib(nibName:"SideMenuTableCell",bundle:nil), forCellReuseIdentifier: "TableCell")
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
 
 }
 
 
 extension SideMenuVC:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return sideMenuItem.count + 1
+        return sideMenuVMObj.getTotalNumberOfItem() + 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableCell") as! SideMenuTableCell
-        let data = SideMenuViewModel().getMenuValue(at: indexPath.row)
-        cell.configureCellForMenu(title: data.menuTitle, image:  data.menuImageIcon)
+        cell.configureCellForMenu(At:indexPath,sideMenuVMObj:sideMenuVMObj)
         return cell
     }
     
@@ -56,6 +46,12 @@ extension SideMenuVC:UITableViewDelegate,UITableViewDataSource{
         
         switch indexPath.row {
         case 0:
+            let mainVC = self.revealViewController().frontViewController as! UINavigationController
+            if (!((mainVC.visibleViewController?.isKind(of: UpdateProfileVC.self))!) )
+            {
+                mainVC.setViewControllers([UpdateProfileVC()], animated: true)
+            }
+
             break
         case 1:
             let mainVC = self.revealViewController().frontViewController as! UINavigationController
@@ -89,7 +85,25 @@ extension SideMenuVC:UITableViewDelegate,UITableViewDataSource{
                 mainVC.setViewControllers([SettingVC()], animated: true)
             }
             break
-
+        case 5:
+            if !sideMenuVMObj.isLogin(){
+                let mainVC = self.revealViewController().frontViewController as! UINavigationController
+                if !((mainVC.visibleViewController?.isKind(of: LoginVC.self))!)
+                {
+                    mainVC.setViewControllers([LoginVC()], animated: true)
+                }
+            }
+            else{
+                sideMenuVMObj.logout()
+                tableView.reloadData()
+                let mainVC = self.revealViewController().frontViewController as! UINavigationController
+                if (!((mainVC.visibleViewController?.isKind(of: HomeParentVC.self))!) || (mainVC.visibleViewController as! HomeParentVC).parentVC != ParentVCFor.Home)
+                {
+                    mainVC.setViewControllers([HomeParentVC(parent:ParentVCFor.Home)], animated: true)
+                }
+                break
+            }
+            break
         default:
             
             break

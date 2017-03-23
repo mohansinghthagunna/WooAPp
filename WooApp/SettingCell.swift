@@ -26,4 +26,8 @@ class SettingCell: UITableViewCell {
         lblTitle.text = Constants.SettingListItem[indexPath.row]
     }
     
+    func configureCellForUpdateProfile(indexPath:IndexPath){
+        lblTitle.text = Constants.AccountSettingListItem[indexPath.row]
+    }
+    
 }
