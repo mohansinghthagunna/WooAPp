@@ -33,6 +33,16 @@ extension SettingVC:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
+        
+        switch indexPath.row {
+        case 0:
+            let profileVC = UpdateProfileVC()
+            self.navigationController?.pushViewController(profileVC, animated: true)
+            (self.navigationController as! CustomNavigationController).pushViewController()
+            break
+        default:
+            break
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
